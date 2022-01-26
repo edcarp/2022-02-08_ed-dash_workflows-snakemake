@@ -434,18 +434,7 @@ to include the relevant installation instrucctions.
 {% endif %}
 
 {% comment %}
-These are the installation instructions for the tools used
-during the workshop.
+We are using VNC for this workshop
 {% endcomment %}
+{% include install_instructions/vnc.html %}
 
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "pilot" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
